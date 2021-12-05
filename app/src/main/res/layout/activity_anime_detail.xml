@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimeDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/animeImage" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:id="@+id/titleLayout"
+    android:orientation="horizontal"
+    android:layout_below="@id/animeImage">
+
+    <TextView
+        android:id="@+id/animeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="16dp"
+        android:textColor="#ff0000"
+        android:textSize="24sp"
+        tools:text="Naruto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_200"
+        android:id="@+id/animeRating"
+        tools:text="4.5"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:paddingVertical="16dp"
+        />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/animeDescription"
+        android:layout_below="@id/animeGenre"
+        tools:text="ertrtyuio hjklm vfvfbbgb"
+        android:textSize="16sp"
+        android:paddingBottom="16dp"
+        android:paddingHorizontal="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/animeGenre"
+        android:layout_below="@id/titleLayout"
+        tools:text="Action"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="16dp" />
+
+</RelativeLayout>
+
+

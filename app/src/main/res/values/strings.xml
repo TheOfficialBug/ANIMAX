@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">ANIMAX</string>
+    <string name="affirmation1">NARUTO</string>
+    <string name="affirmation2">Attack On Titan</string>
+    <string name="affirmation3">Darling In The Franxx</string>
+    <string name="affirmation4">Death Note</string>
+    <string name="affirmation5">Dragon Ball Z</string>
+    <string name="affirmation6">Erased</string>
+    <string name="affirmation7">Fullmetal Alchemist : Brotherhood</string>
+    <string name="affirmation8">Tokyo Ghoul</string>
+    <string name="affirmation9">Haikyuu</string>
+    <string name="affirmation10">Horimiya</string>
+    <string name="affirmation11">Idaten Jump</string>
+    <string name="affirmation12">Jujutsu Kaisen</string>
+    <string name="affirmation13">One Piece</string>
+    <string name="affirmation14">Naruto Shippudden</string>
+    <string name="affirmation15">Tokyo Revengers</string>
+
+    <string name="affirmation01">⭐ 10</string>
+    <string name="affirmation02">⭐ 9.6</string>
+    <string name="affirmation03">⭐ 8</string>
+    <string name="affirmation04">⭐ 9.8</string>
+    <string name="affirmation05">⭐ 9.5</string>
+    <string name="affirmation06">⭐ 8</string>
+    <string name="affirmation07">⭐ 8.7</string>
+    <string name="affirmation08">⭐ 8.4</string>
+    <string name="affirmation09">⭐ 9.4</string>
+    <string name="affirmation010">⭐ 8.3</string>
+    <string name="affirmation011">⭐ 8</string>
+    <string name="affirmation012">⭐ 9</string>
+    <string name="affirmation013">⭐ 10</string>
+    <string name="affirmation014">⭐ 10</string>
+    <string name="affirmation015">⭐ 9.8</string>
+
+</resources>
