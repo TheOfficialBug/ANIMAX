@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val myDataset = Datasource().getAnimeList()
+        val myDataset = Datasource().getAnimeListFromJsonFile(applicationContext)?.get()?: listOf<com.example.affirmations.data.Anime>()
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         val adapter = ItemAdapter(this, myDataset)
@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
         recyclerView.setHasFixedSize(true)
 
     }
-    private fun launchDetailsActivity(anime: Anime) {
+    private fun launchDetailsActivity(anime: com.example.affirmations.data.Anime) {
         val intent = Intent(this, AnimeDetailActivity:: class.java)
-        intent.putExtra("stringResourceId", anime.stringResourceId)
-        intent.putExtra("imageResourceId", anime.imageResourceId)
+        intent.putExtra("title", anime.title)
+        intent.putExtra("image", anime.image)
         intent.putExtra("rating", anime.rating)
         intent.putExtra("description", anime.description)
         intent.putExtra("genre", anime.genre)

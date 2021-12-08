@@ -19,13 +19,30 @@ class AnimeDetailActivity : AppCompatActivity() {
         val extras = intent.extras
 
         if (extras != null){
-            val title = extras.getInt("stringResourceId", 0)
-            animeTitle.text = getString(title)
+            val title = extras.getString("title", "")
+            animeTitle.text = title
 
-            val image = extras.getInt("imageResourceId", 0)
-            animeImage.setImageDrawable(getDrawable(image))
+            val imageId = when(title) {
+                "Naruto" -> R.drawable.naruto
+                "Attack On Titan" -> R.drawable.aot
+                "Darling In The Franxx" -> R.drawable.ditf
+                "Death Note" -> R.drawable.dn
+                "Dragon Ball Z" -> R.drawable.dragon
+                "Erased" -> R.drawable.erased
+                "Fullmetal Alchemist: Brotherhood" -> R.drawable.fullmetal
+                "Tokyo Ghoul" -> R.drawable.ghoul
+                "Haikyuu!" -> R.drawable.haikyuu
+                "Horimiya" -> R.drawable.horimiya
+                "Idaten Jump" -> R.drawable.idaten
+                "One Piece" -> R.drawable.op
+                "Naruto Shippudden" -> R.drawable.shippuden
+                "Tokyo Revengers" -> R.drawable.tokyo
 
-            val rating = extras.getFloat("rating", 0f)
+                else -> R.drawable.animax_logo
+            }
+            animeImage.setImageResource(imageId)
+
+            val rating = extras.getString("rating", "")
             animeRating.text = rating.toString()
 
             val description = extras.getString("description", "")
