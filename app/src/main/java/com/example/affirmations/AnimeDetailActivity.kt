@@ -34,8 +34,9 @@ class AnimeDetailActivity : AppCompatActivity() {
                 "Haikyuu!" -> R.drawable.haikyuu
                 "Horimiya" -> R.drawable.horimiya
                 "Idaten Jump" -> R.drawable.idaten
+                "Jujutsu Kaisen" -> R.drawable.jjk
                 "One Piece" -> R.drawable.op
-                "Naruto Shippudden" -> R.drawable.shippuden
+                "Naruto Shippuden" -> R.drawable.shippuden
                 "Tokyo Revengers" -> R.drawable.tokyo
 
                 else -> R.drawable.animax_logo
